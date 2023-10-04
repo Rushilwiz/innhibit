@@ -3,13 +3,13 @@
   "name": "DNR Advantage",
   "version": "1.0",
   "description": "Chrome extension for checking guests against a Do Not Rent list.",
-    "permissions": ["notifications", "activeTab", "storage", "http://*/*", "https://*/*"],
+ "permissions": ["notifications", "activeTab", "storage"],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["<URL of the Reservation Information page or pattern>"],
+	"matches": ["https://news.ycombinator.com/*"],
       "js": ["content.js"]
     }
   ],
