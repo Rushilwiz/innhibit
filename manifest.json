@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-	"matches": ["https://news.ycombinator.com/*"],
+	"matches": ["https://choiceadvantage.com/choicehotels/*"],
       "js": ["content.js"]
     }
   ],
